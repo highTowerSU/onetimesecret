@@ -8,8 +8,6 @@ services:
     container_name: onetime-app
     depends_on:
       - redis
-    env_file:
-      - .env
     entrypoint: ["./bin/entrypoint.sh"]
     stdin_open: true
     tty: true
